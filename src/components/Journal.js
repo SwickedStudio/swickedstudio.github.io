@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class About extends Component {
+class Journal extends Component {
  render() {
    return (
      <div>
@@ -15,7 +15,7 @@ class About extends Component {
 					</ul>							
 					
 				</div>*/}
-				<h1 className="title">About</h1>
+				<h1 className="title">Journal</h1>
 			</div>		
 		</section>
 
@@ -50,4 +50,4 @@ class About extends Component {
    );
  }
 }
-export default About;
+export default Journal;

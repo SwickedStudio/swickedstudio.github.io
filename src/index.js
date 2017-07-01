@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './css/main.css';
 import './css/reset.css';
+import './css/main.css';
 
 // import $ from './js/jquery.js';
 // import './js/main.js';

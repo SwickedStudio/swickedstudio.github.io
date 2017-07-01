@@ -20,8 +20,6 @@
     
 */
 
-
-
 /*  Fonts  */
 @font-face {
     font-family: 'raleway-regular';
@@ -156,7 +154,8 @@ h5, h6          { font-weight: bolder }
     }
 
     header nav ul li a.selected{
-        color: #969595;
+        color: purple;
+        font-weight: bold;
     }
 
     header nav ul li a:hover {
@@ -280,7 +279,7 @@ h5, h6          { font-weight: bolder }
     box-sizing: border-box;
     position: relative;
     z-index: 55;
-    background: #f6f6f6;
+    /*background: #f6f6f6;*/
     clear: both;
 }
 
@@ -536,12 +535,6 @@ h5, h6          { font-weight: bolder }
     left: 50%;
     margin-left: -3px;
 }
-
-
-
-
-
-
 
 /*  Responsive code  */
 @media (max-width:1099px){

@@ -8,7 +8,10 @@ import {
 
 import Header from './components/Header';
 import Home from './components/Home';
+import Portfolio from './components/Portfolio';
 import About from './components/About';
+import Team from './components/Team';
+import Journal from './components/Journal';
 import Topics from './components/Topics';
 import NotFound from './components/NotFound';
 
@@ -16,12 +19,13 @@ const App = () => (
   <Router>
     <div>
       <Header />
-      <hr/>
       <section className="main clearfix">
         <Switch>
           <Route exact path="/" component={Home}/>
+          <Route path="/portfolio" component={Portfolio}/>
           <Route path="/about" component={About}/>
-          <Route path="/topics" component={Topics}/>
+          <Route path="/team" component={Team}/>
+          <Route path="/journal" component={Journal}/>
           <Route component={NotFound}/>
         </Switch>
       </section>
