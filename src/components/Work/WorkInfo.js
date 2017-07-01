@@ -4,14 +4,22 @@ import React, { Component } from 'react';
 class WorkInfo extends Component {
     constructor(props){
         super(props);
-        this.state = {title: props.match.params.name};
+        var folder = props.match.params.name;
+        this.state = {
+            title: props.match.params.name,
+            banner: require('./'+folder +'/banner.jpg'),
+			divStyle: {
+            	background: 'url('+require('./'+folder +'/banner.jpg') + ') no-repeat'
+        	}
+        };
 
         console.log(this.state.title);
 
     }
     render() {return (       
      <div>
-		<section className="top">	
+		<section className="top">
+            <img className="banner" src={this.state.banner} alt=""/>
 			<div className="wrapper content_header clearfix">
 				<h1 className="title">{this.state.title}</h1>
 			</div>		

@@ -4,7 +4,8 @@ class About extends Component {
  render() {
    return (
      <div>
-		<section className="top">	
+		<section className="top">
+			<img className="banner" src={require("../img/hero_image.jpg")} alt=""/>
 			<div className="wrapper content_header clearfix">
 				{/*<div className="work_nav">
 							
