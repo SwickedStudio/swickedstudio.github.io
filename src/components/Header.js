@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {
-  NavLink
+  NavLink,
+	Link
 } from 'react-router-dom';
 
 class Header extends Component {
@@ -8,7 +9,7 @@ class Header extends Component {
    return (
     <header>
 			<div className="logo">
-				<a href="index.html"><img src={require("../img/logo2.png")} title="Swicked Studio" alt="Swicked Studio"/></a>
+				<Link to="/"><img src={require("../img/logo2.png")} title="Swicked Studio" alt="Swicked Studio"/></Link>
 			</div>
 		
 			<div id="menu_icon"></div>
@@ -25,7 +26,7 @@ class Header extends Component {
 		
 			<div className="footer clearfix">
 				<ul className="social clearfix">
-					<li><a href="http://ww.facebook/tiago.somda" className="fb" data-title="Facebook"></a></li>
+					<li><a href="http://ww.facebook/tiago.somda"> <span  className="fb" /> </a></li>
 					{/*<li><a href="#" className="google" data-title="Google +"></a></li>
 					<li><a href="#" className="behance" data-title="Behance"></a></li>
 					<li><a href="#" className="twitter" data-title="Twitter"></a></li>

@@ -2,7 +2,6 @@ import React from 'react'
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Switch
 } from 'react-router-dom'
 
@@ -13,7 +12,6 @@ import About from './components/About';
 import Team from './components/Team';
 import Journal from './components/Journal';
 import WorkInfo from './components/Work/WorkInfo';
-import Topics from './components/Topics';
 import NotFound from './components/NotFound';
 
 const App = () => (
