@@ -6,7 +6,7 @@ import {
   Switch
 } from 'react-router-dom'
 
-import Header from './components/Header/Header';
+import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Topics from './components/Topics';
@@ -17,13 +17,13 @@ const App = () => (
     <div>
       <Header />
       <hr/>
-      <section class="main clearfix">
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route path="/about" component={About}/>
-        <Route path="/topics" component={Topics}/>
-        <Route component={NotFound}/>
-      </Switch>
+      <section className="main clearfix">
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/about" component={About}/>
+          <Route path="/topics" component={Topics}/>
+          <Route component={NotFound}/>
+        </Switch>
       </section>
     </div>
   </Router>

@@ -3,25 +3,23 @@ import {
   Link
 } from 'react-router-dom';
 
-import './header.css';
-
 class Header extends Component {
  render() {
    return (
     <header>
 		<div className="logo">
-			<a href="index.html"><img src={require("../../img/logo2.png")} title="Swicked Studio" alt="Swicked Studio"/></a>
+			<a href="index.html"><img src={require("../img/logo2.png")} title="Swicked Studio" alt="Swicked Studio"/></a>
 		</div>
 
 		<div id="menu_icon"></div>
 		<nav>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/team">The Tea,</Link></li>
-                <li><Link to="/journal">Journal</Link></li>
-                <li><Link to="/contact">Contact Us</Link></li>
-            </ul>
+      <ul>
+      	<li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/team">The Team</Link></li>
+        <li><Link to="/journal">Journal</Link></li>
+        <li><Link to="/contact">Contact Us</Link></li>
+      </ul>
 		</nav>
 
 		<div className="footer clearfix">
