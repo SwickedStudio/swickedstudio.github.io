@@ -14,9 +14,25 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "deploy-to-git",
+    "build-my-app": "npm run build"
   },
+  "config": {
+    "deployToGit": {
+      "repository": "https://github.com/SwickedStudio/swickedstudio.github.io.git",
+      "branch": "gh-pages",
+      "folder": "build",
+      "script": "npm run build-my-app",
+      "commit": "Automatic commit text",
+      "user": {
+          "email": "tsomda@gmail.com",
+          "name": "Tiago"
+      }
+    }
+  },  
   "devDependencies": {
+    "deploy-to-git": "^0.1.4",
     "git-directory-deploy": "^1.5.1"
   }
 }
