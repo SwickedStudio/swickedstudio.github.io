@@ -12,8 +12,6 @@ var works = [
 class Portfolio extends Component {
 	constructor(props){
         super(props);
-        // this.state = {title: props.match.params.name};
-
 		works = works.sort((a,b) => a.order > b.order);
 
     }

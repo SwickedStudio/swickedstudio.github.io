@@ -7,19 +7,15 @@ class WorkInfo extends Component {
         var folder = props.match.params.name;
         this.state = {
             title: props.match.params.name,
-            banner: require('./'+folder +'/banner.jpg'),
-			divStyle: {
-            	background: 'url('+require('./'+folder +'/banner.jpg') + ') no-repeat'
+			banner: {
+            	'background': 'url('+require('./'+folder +'/banner.jpg') + ') no-repeat',
+				'background-position': '50% 50%'
         	}
         };
-
-        console.log(this.state.title);
-
     }
     render() {return (       
      <div>
-		<section className="top">
-            <img className="banner" src={this.state.banner} alt=""/>
+		<section className="top" style={this.state.banner }>
 			<div className="wrapper content_header clearfix">
 				<h1 className="title">{this.state.title}</h1>
 			</div>		
