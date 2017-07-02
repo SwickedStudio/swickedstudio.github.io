@@ -9,7 +9,7 @@ class Header extends Component {
    return (
     <header>
 			<div className="logo">
-				<Link to="/"><img src={require("../img/logo2.png")} title="Swicked Studio" alt="Swicked Studio"/></Link>
+				<Link to="/"><img src={require("../img/logo3.png")} title="Swicked Studio" alt="Swicked Studio"/></Link>
 			</div>
 		
 			<div id="menu_icon"></div>

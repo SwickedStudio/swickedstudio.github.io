@@ -31,7 +31,6 @@ class Portfolio extends Component {
 							<h2>{work.title}</h2>
 							<h3>{work.subTitle}</h3>
 							<h1>{work.categories}</h1>
-							<h1>{workRoot + work.img + thumbnail}</h1>
 						</div>
 					</div>
 				</Link>
