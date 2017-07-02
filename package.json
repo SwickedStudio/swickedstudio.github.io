@@ -26,11 +26,11 @@
       "script": "npm run build-my-app",
       "commit": "Automatic commit text",
       "user": {
-          "email": "tsomda@gmail.com",
-          "name": "Tiago"
+        "email": "tsomda@gmail.com",
+        "name": "Tiago"
       }
     }
-  },  
+  },
   "devDependencies": {
     "deploy-to-git": "^0.1.4"
   }
