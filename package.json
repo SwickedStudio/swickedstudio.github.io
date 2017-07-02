@@ -32,7 +32,6 @@
     }
   },  
   "devDependencies": {
-    "deploy-to-git": "^0.1.4",
-    "git-directory-deploy": "^1.5.1"
+    "deploy-to-git": "^0.1.4"
   }
 }
