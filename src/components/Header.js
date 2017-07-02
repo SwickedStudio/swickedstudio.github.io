@@ -17,9 +17,15 @@ class Header extends Component {
 		console.log('toggle');
     	this.setState({ toggleMenu: !this.state.toggleMenu })
 	}
+
+	closeHandler = function()
+	{
+		this.setState({ toggleMenu: false })
+	}
+
  	render() {
-	var clsName = this.state.toggleMenu ? 'close_menu' : '';
-	var clsName2 = this.state.toggleMenu ? 'show_menu' : '';
+	var close_menu = this.state.toggleMenu ? 'close_menu' : '';
+	var show_menu = this.state.toggleMenu ? 'show_menu' : '';
    return (
     <header>
 			<div className="logo">
@@ -27,15 +33,15 @@ class Header extends Component {
 				<Link to="/"><img src={require("../img/logo3.png")} title="Swicked Studio" alt="Swicked Studio"/></Link>
 			</div>
 		
-			<div id="menu_icon" className={ clsName } onClick={this.toggleHandler.bind(this)}></div>
+			<div id="menu_icon" className={ close_menu } onClick={this.toggleHandler.bind(this)}></div>
 			<nav>
-    	  <ul className={clsName2}>
-    	  	<li><NavLink to="/">Home</NavLink></li>
-    	    <li><NavLink to="/about" activeClassName="selected">About</NavLink></li>
-					<li><NavLink to="/portfolio" activeClassName="selected">Portfolio</NavLink></li>
-    	    <li><NavLink to="/team" activeClassName="selected">The Team</NavLink></li>
-    	    <li><NavLink to="/journal" activeClassName="selected">Journal</NavLink></li>
-    	    <li><NavLink to="/contact" activeClassName="selected">Contact Us</NavLink></li>
+    	  <ul className={show_menu}>
+    	  	<li><NavLink onClick={this.closeHandler.bind(this)} to="/">Home</NavLink></li>
+    	    <li><NavLink onClick={this.closeHandler.bind(this)} to="/about" activeClassName="selected">About</NavLink></li>
+					<li><NavLink onClick={this.closeHandler.bind(this)} to="/portfolio" activeClassName="selected">Portfolio</NavLink></li>
+    	    <li><NavLink onClick={this.closeHandler.bind(this)} to="/team" activeClassName="selected">The Team</NavLink></li>
+    	    <li><NavLink onClick={this.closeHandler.bind(this)} to="/journal" activeClassName="selected">Journal</NavLink></li>
+    	    <li><NavLink onClick={this.closeHandler.bind(this)} to="/contact" activeClassName="selected">Contact Us</NavLink></li>
     	  </ul>
 			</nav>
 		

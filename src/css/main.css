@@ -366,7 +366,7 @@ h5, h6          { font-weight: bolder }
 }
 
 .top > .banner {
-    width: 100%;
+    /*width: 100%;*/
     height: 350px;
     overflow: hidden;
     display: block;
