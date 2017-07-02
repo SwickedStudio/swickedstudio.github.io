@@ -5,16 +5,31 @@ import {
 } from 'react-router-dom';
 
 class Header extends Component {
- render() {
+	constructor(props){
+  	super(props);
+    // this.state = {title: props.match.params.name};
+
+		this.state = { toggleMenu: false };
+
+ 	}
+
+	toggleHandler = function() {
+		console.log('toggle');
+    	this.setState({ toggleMenu: !this.state.toggleMenu })
+	}
+ 	render() {
+	var clsName = this.state.toggleMenu ? 'close_menu' : '';
+	var clsName2 = this.state.toggleMenu ? 'show_menu' : '';
    return (
     <header>
 			<div className="logo">
+				
 				<Link to="/"><img src={require("../img/logo3.png")} title="Swicked Studio" alt="Swicked Studio"/></Link>
 			</div>
 		
-			<div id="menu_icon"></div>
+			<div id="menu_icon" className={ clsName } onClick={this.toggleHandler.bind(this)}></div>
 			<nav>
-    	  <ul>
+    	  <ul className={clsName2}>
     	  	<li><NavLink to="/">Home</NavLink></li>
     	    <li><NavLink to="/about" activeClassName="selected">About</NavLink></li>
 					<li><NavLink to="/portfolio" activeClassName="selected">Portfolio</NavLink></li>

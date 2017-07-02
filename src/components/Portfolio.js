@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
 var workRoot = './Work/';
-var thumbnail = '/thumbnail.jpg';
 
 var works = [
   {order:1, folder: 'BitterGods', title: 'Bitter Gods', subTitle:'Escape the Wrath!', categories: 'VR, Desktop, Mobile, Multiplayer'},
