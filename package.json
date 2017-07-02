@@ -16,7 +16,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "deploy-to-git",
-    "build-my-app": "npm run build & xcopy build publish /s /e "
+    "build-my-app": "npm run build & xcopy build publish /s /e && git add * && git commit -m 'message' && git push"
   },
   "config": {
     "deployToGit": {
