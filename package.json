@@ -16,12 +16,12 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "deploy-to-git",
-    "build-my-app": "npm run build & xcopy build publish /s /e && git add * && git commit -m 'message' && git push"
+    "build-my-app": "xcopy build publish /s /e /y"
   },
   "config": {
     "deployToGit": {
       "repository": "https://github.com/SwickedStudio/swickedstudio.github.io.git",
-      "branch": "gh-pages",
+      "branch": "master",
       "folder": "publish",
       "script": "npm run build-my-app",
       "commit": "Automatic commit text",
